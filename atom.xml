@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>夢瓛小站</title>
+  
+  <subtitle>随记</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://gitblog.landofdream.top/"/>
+  <updated>2020-08-08T10:46:35.363Z</updated>
+  <id>http://gitblog.landofdream.top/</id>
+  
+  <author>
+    <name>夢瓛</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Zabbix Server 安装</title>
+    <link href="http://gitblog.landofdream.top/2020/08/05/zabbix1/"/>
+    <id>http://gitblog.landofdream.top/2020/08/05/zabbix1/</id>
+    <published>2020-08-05T11:47:55.000Z</published>
+    <updated>2020-08-08T10:46:35.363Z</updated>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;这里的内容是个人的经验总结，如有遗漏或错误欢迎指正&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;Zabbix简介&quot;&gt;&lt;a href=&quot;#Zabbix简介&quot; class=&quot;headerlink&quot; title=&quot;Zabbix简介&quot;&gt;&lt;/a&gt;Zabbix简介&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Zabbix 是一个企业级的分布式开源监控方案，能够监控各种网络参数以及服务器健康性和完整性的软件。简单来说就是服务器等设备的监控面板程序，而且是开源免费的。&lt;br&gt;Zabbix 由两部分构成，Zabbix Server（服务端） 与可选组件 Zabbix Agent（客户端）。Zabbix Server 可以通过 SNMP，Zabbix Agent，ping，端口监视等方法提供对远程服务器/网络状态的监视，数据收集等功能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;Zabbix-安装&quot;&gt;&lt;a href=&quot;#Zabbix-安装&quot; class=&quot;headerlink&quot; title=&quot;Zabbix 安装&quot;&gt;&lt;/a&gt;Zabbix 安装&lt;/h2&gt;&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;为了配置环境方便，提前安装了宝塔面板作为环境支持，宝塔面板安装方法可前往宝塔面板查看:&lt;br&gt;&lt;a href=&quot;https://www.bt.cn/&quot; target=&quot;_blank&quot;&gt;宝塔面板&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Parallels Desktop 14&lt;/li&gt;
+&lt;li&gt;CentOS 7&lt;/li&gt;
+&lt;li&gt;LNMP&lt;ul&gt;
+&lt;li&gt;MySQL版本 &amp;gt;= 5.7&lt;/li&gt;
+&lt;li&gt;PHP版本 &amp;gt;= 7.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="运维" scheme="http://gitblog.landofdream.top/categories/%E8%BF%90%E7%BB%B4/"/>
+    
+      <category term="zabbix" scheme="http://gitblog.landofdream.top/categories/%E8%BF%90%E7%BB%B4/zabbix/"/>
+    
+    
+      <category term="运维" scheme="http://gitblog.landofdream.top/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+      <category term="zabbix" scheme="http://gitblog.landofdream.top/tags/zabbix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>课室团队故障手册（长期更新）</title>
+    <link href="http://gitblog.landofdream.top/2020/08/02/kstd/"/>
+    <id>http://gitblog.landofdream.top/2020/08/02/kstd/</id>
+    <published>2020-08-02T10:58:54.000Z</published>
+    <updated>2020-08-08T10:46:35.363Z</updated>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;这里的内容是个人的经验总结，如有遗漏或错误欢迎指正&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;硬件故障&quot;&gt;&lt;a href=&quot;#硬件故障&quot; class=&quot;headerlink&quot; title=&quot;硬件故障&quot;&gt;&lt;/a&gt;硬件故障&lt;/h2&gt;&lt;h3 id=&quot;电脑&quot;&gt;&lt;a href=&quot;#电脑&quot; class=&quot;headerlink&quot; title=&quot;电脑&quot;&gt;&lt;/a&gt;电脑&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;电脑无法启动&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;（1）检查中控是否有开启&lt;br&gt;（2）检查电脑是否能手动开机（如果可以，则有可能电脑与中控间插线没有插好）&lt;br&gt;（3）检查电脑电源是否有插好&lt;br&gt;（4）检查电脑硬件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="维护" scheme="http://gitblog.landofdream.top/categories/%E7%BB%B4%E6%8A%A4/"/>
+    
+    
+      <category term="维护" scheme="http://gitblog.landofdream.top/tags/%E7%BB%B4%E6%8A%A4/"/>
+    
+  </entry>
+  
+</feed>
